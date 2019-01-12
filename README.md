@@ -8,5 +8,14 @@ npm install -S afeiship/next-sets --registry=https://registry.npm.taobao.org
 
 ## usage:
 ```js
-//DOCS here!
+import 'next-sets';
+const obj = {};
+
+nx.sets(obj, {
+  testA: 'A1',
+  testB: 'B1',
+  testC: 'C1',
+  testD: 'D1',
+  'path.key1.a.b': 'b-value1'
+});
 ```
