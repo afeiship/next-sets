@@ -10,5 +10,13 @@ npm install -S @feizheng/next-sets
 ```js
 import '@feizheng/next-sets';
 
-//DOCS here!
+const obj = {};
+
+nx.sets(obj, {
+  testA: 'A1',
+  testB: 'B1',
+  testC: 'C1',
+  testD: 'D1',
+  'path.key1.a.b': 'b-value1'
+});
 ```
