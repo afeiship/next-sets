@@ -1,7 +1,7 @@
 {
   "name": "next-sets",
   "version": "0.0.1",
-  "description": "Set a lot value value",
+  "description": "nextBoilerplatePackageDescription",
   "main": "dist/next-sets.js",
   "authors": [
     "afei"

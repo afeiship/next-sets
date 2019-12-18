@@ -1,21 +1,14 @@
 # next-sets
-> Set a lot value value
+> Set a lot value value.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-sets --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-sets
 ```
 
-## usage:
+## usage
 ```js
-import 'next-sets';
-const obj = {};
+import '@feizheng/next-sets';
 
-nx.sets(obj, {
-  testA: 'A1',
-  testB: 'B1',
-  testC: 'C1',
-  testD: 'D1',
-  'path.key1.a.b': 'b-value1'
-});
+//DOCS here!
 ```
