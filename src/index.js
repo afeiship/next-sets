@@ -1,9 +1,9 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.sets = function(inTarget, inObject) {
-    nx.forIn(inObject, function(key, value) {
+  nx.sets = function (inTarget, inObject) {
+    nx.forIn(inObject, function (key, value) {
       nx.set(inTarget, key, value);
     });
   };
