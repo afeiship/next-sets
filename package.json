@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-sets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set a lot value value.",
   "homepage": "https://github.com/afeiship/next-sets",
   "author": {
@@ -39,5 +39,9 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "sets"
+  ]
 }
