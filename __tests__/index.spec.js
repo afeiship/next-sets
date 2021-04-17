@@ -42,5 +42,17 @@
         }
       });
     });
+
+    test('sets for nx when args.length == 1', () => {
+      nx.sets({
+        a: 1,
+        b: 2,
+        c: 3
+      });
+
+      expect(nx.a).toBe(1);
+      expect(nx.b).toBe(2);
+      expect(nx.c).toBe(3);
+    });
   });
 })();

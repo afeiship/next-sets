@@ -17,6 +17,7 @@ import '@jswork/next-sets';
 
 const obj = {};
 
+// set value to obj
 nx.sets(obj, {
   testA: 'A1',
   testB: 'B1',
@@ -24,6 +25,13 @@ nx.sets(obj, {
   testD: 'D1',
   'path.key1.a.b': 'b-value1'
 });
+
+// set values to nx
+nx.sets({
+  a: 1,
+  b: 2,
+  c: 3
+})
 ```
 
 ## license

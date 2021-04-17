@@ -1,10 +1,15 @@
 (function () {
-  var global = global || this || window || Function('return this')();
+  var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
 
   nx.sets = function (inTarget, inObject) {
-    nx.forIn(inObject, function (key, value) {
-      nx.set(inTarget, key, value);
+    var len = arguments.length;
+    var target = inTarget;
+    var obj = inObject;
+    len === 1 && ((target = nx), (obj = inTarget));
+
+    nx.forIn(obj, function (key, value) {
+      nx.set(target, key, value);
     });
   };
 
