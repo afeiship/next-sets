@@ -1,3 +1,3 @@
 interface NxStatic {
-  sets: (target, obj) => void;
+  sets: (target, obj?) => void;
 }
