@@ -54,5 +54,20 @@
       expect(nx.b).toBe(2);
       expect(nx.c).toBe(3);
     });
+
+    test('with options prefix', () => {
+      var obj = { version: '1.0.0' };
+      nx.sets(
+        obj,
+        {
+          showToast: () => {},
+          hideToast: () => {}
+        },
+        { prefix: 'wx' }
+      );
+
+      expect(typeof obj.wx.showToast).toBe('function');
+      expect(typeof obj.wx.hideToast).toBe('function');
+    });
   });
 })();

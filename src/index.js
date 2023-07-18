@@ -1,13 +1,17 @@
 import nx from '@jswork/next';
 
-nx.sets = function (inTarget, inObject) {
-  var len = arguments.length;
-  var target = inTarget;
-  var obj = inObject;
-  len === 1 && ((target = nx), (obj = inTarget));
+const defaults = { prefix: '' };
+
+nx.sets = function (inTarget, inObject, inOptions) {
+  const opts = nx.mix(null, defaults, inOptions);
+  const len = arguments.length;
+  const isOnly = len === 1;
+  const obj = isOnly ? inTarget : inObject;
+  const target= isOnly ? nx : inTarget;
 
   nx.forIn(obj, function (key, value) {
-    nx.set(target, key, value);
+    const theKey = [opts.prefix, key].filter(Boolean).join('.');
+    nx.set(target, theKey, value);
   });
 };
 
